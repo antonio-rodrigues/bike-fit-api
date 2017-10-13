@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "loopback",
+    "eslint:recommended",
+    "plugin:vue/recommended"
+  ]
+}

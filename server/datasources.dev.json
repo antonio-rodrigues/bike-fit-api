@@ -1,0 +1,16 @@
+{
+  "mongo-ovh": {
+    "host": "vps458757.ovh.net",
+    "port": 27017,
+    "database": "dev",
+    "user":"arod",
+    "password":"bi2017",
+    "name": "mongo-ovh",
+    "server": {
+      "auto_reconnect": true,
+      "reconnectTries": 100,
+      "reconnectInterval": 1000
+    },
+    "connector": "mongodb"
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "sa@bikefitapp.com",
+    "lastName": "Super",
+    "firstName": "Admin",
+    "email": "sa@bikefitapp.com",
+    "status": "ACTIVE",
+    "username": "sa",
+    "password": "sa",
+    "phoneNo1": "+351 96 123 45 67"
+  }
+]

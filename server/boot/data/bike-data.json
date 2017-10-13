@@ -1,0 +1,48 @@
+[
+  {"make":"Honda","model":"VFR","typeId":"Sport Touring"},
+
+  {"make":"Honda","model":"VFR800F","typeId":"Touring"},
+  {"make":"Honda","model":"GL1800","typeId":"Touring"},
+
+  {"make":"Honda","model":"CBR1000RR Fireblade","typeId":"Sport"},
+  {"make":"Honda","model":"CBR1000RR Fireblade SP","typeId":"Sport"},
+  {"make":"Honda","model":"CBR650F","typeId":"Sport"},
+  {"make":"Honda","model":"CBR500R","typeId":"Sport"},
+  {"make":"Honda","model":"CBR300R","typeId":"Sport"},
+
+  {"make":"Honda","model":"CB1100 RS","typeId":"Street"},
+  {"make":"Honda","model":"CB1100 EX","typeId":"Street"},
+  {"make":"Honda","model":"NC750S","typeId":"Street"},
+  {"make":"Honda","model":"CB650F","typeId":"Street"},
+  {"make":"Honda","model":"CB500F","typeId":"Street"},
+
+  {"make":"Honda","model":"VFR1200X Crosstrourer","typeId":"Adventure"},
+  {"make":"Honda","model":"CRF1000L Africa Twin","typeId":"Adventure"},
+  {"make":"Honda","model":"VFR800X Crossrunner","typeId":"Adventure"},
+  {"make":"Honda","model":"X-ADV","typeId":"Adventure"},
+  {"make":"Honda","model":"NC750X","typeId":"Adventure"},
+  {"make":"Honda","model":"CB500X","typeId":"Adventure"},
+  {"make":"Honda","model":"CRF250 Rally","typeId":"Adventure"},
+  {"make":"Honda","model":"CFR250L","typeId":"Adventure"},
+
+  {"make":"Honda","model":"VT750C2B Shadow Black Sprint","typeId":"Custom"},
+  {"make":"Honda","model":"CMX500 Rebel","typeId":"Custom"},
+
+  {"make":"Honda","model":"Integra","typeId":"Scooter"},
+  {"make":"Honda","model":"SH300i","typeId":"Scooter"},
+  {"make":"Honda","model":"Forza 125","typeId":"Scooter"},
+  {"make":"Honda","model":"SH125i","typeId":"Scooter"},
+  {"make":"Honda","model":"SH Mode 125","typeId":"Scooter"},
+  {"make":"Honda","model":"PCX 125","typeId":"Scooter"},
+  {"make":"Honda","model":"Vision 110","typeId":"Scooter"},
+  {"make":"Honda","model":"NSC50R","typeId":"Scooter"},
+  {"make":"Honda","model":"Vision 50","typeId":"Scooter"},
+
+  {"make":"Honda","model":"CFR125R","typeId":"125 CC"},
+  {"make":"Honda","model":"MSX125","typeId":"125 CC"},
+  {"make":"Honda","model":"CB125F","typeId":"125 CC"},
+
+  {"make":"Honda","model":"Montesa Cota 300RR","typeId":"Off Road"},
+  {"make":"Honda","model":"Montesa Cota 4RT260","typeId":"Off Road"},
+  {"make":"Honda","model":"Montesa 4RIDE","typeId":"Off Road"}
+]

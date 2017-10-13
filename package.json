@@ -1,0 +1,62 @@
+{
+  "name": "bike-fit-api",
+  "version": "0.0.1",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node .",
+    "pretest": "jshint ./test",
+    "posttest": "npm run lint && nsp check",
+    "test": "ava \"test/**/*.spec.js\" --verbose"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "blob": "0.0.4",
+    "compression": "^1.7.1",
+    "cors": "^2.8.4",
+    "event-stream": "^3.3.4",
+    "fs-extra": "^4.0.2",
+    "helmet": "^3.8.2",
+    "lodash": "^4.17.4",
+    "loopback": "^3.14.0",
+    "loopback-boot": "^2.26.2",
+    "loopback-component-explorer": "^5.1.0",
+    "loopback-component-storage": "^3.3.1",
+    "loopback-connector-mongodb": "^3.2.1",
+    "loopback-context": "^3.3.0",
+    "loopback-ds-paginate-mixin": "^1.1.1",
+    "moment": "^2.19.1",
+    "serve-favicon": "^2.4.5",
+    "socket.io": "^2.0.3",
+    "strong-error-handler": "^2.2.0",
+    "xlsx": "^0.11.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "eslint-config-loopback": "^8.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.2.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "2.1.0",
+    "nsp": "^2.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antonio-rodrigues/bike-fit-api.git"
+  },
+  "license": "UNLICENSED",
+  "description": "Bike Fit API",
+  "author": {
+    "name": "antonio.cruz.rodrigues",
+    "email": "info@bikefitapp.com",
+    "url": "https://www.linkedin.com/in/antoniocruzrodrigues/"
+  }
+}

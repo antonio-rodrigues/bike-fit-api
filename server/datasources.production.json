@@ -1,0 +1,14 @@
+{
+  "mongo-ovh": {
+    "host": "128.65.196.63",
+    "port": 27017,
+    "database": "bau-production",
+    "name": "mongo-ovh",
+    "server": {
+      "auto_reconnect": true,
+      "reconnectTries": 100,
+      "reconnectInterval": 1000
+    },
+    "connector": "mongodb"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mongo-ovh",
+    "public": true,
+    "acls": [
+      {
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "accessType": "*"
+      }
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "mongo-ovh",
+    "public": true
+  },
+  "ACL": {
+    "dataSource": "mongo-ovh",
+    "public": true
+  },
+  "RoleMapping": {
+    "dataSource": "mongo-ovh",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Role": {
+    "dataSource": "mongo-ovh",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Person": {
+    "dataSource": "mongo-ovh",
+    "public": true
+  },
+  "Metadata": {
+    "dataSource": "mongo-ovh",
+    "public": true
+  },
+  "Bike": {
+    "dataSource": "mongo-ovh",
+    "public": true
+  },
+  "FuelLog": {
+    "dataSource": "mongo-ovh",
+    "public": true
+  },
+  "BikeType": {
+    "dataSource": "mongo-ovh",
+    "public": true
+  },
+  "BikeData": {
+    "dataSource": "mongo-ovh",
+    "public": true
+  }
+}

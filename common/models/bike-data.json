@@ -1,0 +1,25 @@
+{
+  "name": "BikeData",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "make": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "typeId": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
