@@ -1,0 +1,23 @@
+[
+  {
+    "userId": "james.dean@biker.movie",
+    "bikeId": "1234",
+    "serviceDate": "2017-10-13",
+    "targetKms": 2400,
+    "typeId": "CHAIN_LUBE"
+  },
+  {
+    "userId": "james.dean@biker.movie",
+    "bikeId": "1234",
+    "serviceDate": "2017-11-25",
+    "targetKms": 10000,
+    "typeId": "CHAIN_FULL_CLEAN"
+  },
+  {
+    "userId": "james.dean@biker.movie",
+    "bikeId": "1234",
+    "serviceDate": "2018-01-01",
+    "targetKms": 0,
+    "typeId": "UIC_RENEWAL"
+  }
+]
