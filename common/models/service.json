@@ -1,23 +1,33 @@
 {
-  "name": "Bike",
-  "plural": "Bikes",
+  "name": "Service",
+  "plural": "Service",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "year": {
+    "userId": {
+      "type": "string",
+      "required": true
+    },
+    "bikeId": {
+      "type": "string",
+      "required": true
+    },
+    "serviceDate": {
+      "type": "date",
+      "required": true
+    },
+    "targetKms": {
       "type": "number",
-      "required": true
+      "required": true,
+      "default": 0
     },
-    "make": {
+    "typeId": {
       "type": "string",
-      "required": true
-    },
-    "model": {
-      "type": "string",
-      "required": true
+      "required": true,
+      "default": "UNSET"
     }
   },
   "validations": [],

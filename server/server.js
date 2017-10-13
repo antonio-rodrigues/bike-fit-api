@@ -119,7 +119,7 @@ boot(app, __dirname, (err) => {
   console.group('APP ENV PARAMETERS:')
   getColorizedBootVars('NODE_ENV', process.env.NODE_ENV)
   getColorizedBootVars('INITDB', process.env.INITDB)
-  getColorizedBootVars('INIUSERS', process.env.INIUSERS)
+  getColorizedBootVars('INITUSERS', process.env.INITUSERS)
   getColorizedBootVars('INITMETADATA', process.env.INITMETADATA)
   getColorizedBootVars('INITBIKES', process.env.INITBIKES)
   getColorizedBootVars('INISTORAGE', process.env.INISTORAGE)

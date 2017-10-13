@@ -27,7 +27,8 @@ module.exports = (app) => {
       'Metadata',
       'FuelLog',
       'BikeType',
-      'BikeData'
+      'BikeData',
+      'Service'
     ]
 
     return (Promise.all(
