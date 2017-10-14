@@ -53,10 +53,6 @@
     "dataSource": "mongo-ovh",
     "public": true
   },
-  "Bike": {
-    "dataSource": "mongo-ovh",
-    "public": true
-  },
   "FuelLog": {
     "dataSource": "mongo-ovh",
     "public": true
@@ -66,6 +62,10 @@
     "public": true
   },
   "BikeData": {
+    "dataSource": "mongo-ovh",
+    "public": true
+  },
+  "Service": {
     "dataSource": "mongo-ovh",
     "public": true
   }

@@ -1,33 +1,5 @@
 'use strict'
 
-// var loopback = require('loopback');
-// var boot = require('loopback-boot');
-
-// var app = module.exports = loopback();
-
-// app.start = function() {
-//   // start the web server
-//   return app.listen(function() {
-//     app.emit('started');
-//     var baseUrl = app.get('url').replace(/\/$/, '');
-//     console.log('Web server listening at: %s', baseUrl);
-//     if (app.get('loopback-component-explorer')) {
-//       var explorerPath = app.get('loopback-component-explorer').mountPath;
-//       console.log('Browse your REST API at %s%s', baseUrl, explorerPath);
-//     }
-//   });
-// };
-
-// // Bootstrap the application, configure models, datasources and middleware.
-// // Sub-apps like REST API are mounted via boot scripts.
-// boot(app, __dirname, function(err) {
-//   if (err) throw err;
-
-//   // start the server if `$ node server.js`
-//   if (require.main === module)
-//     app.start();
-// });
-
 const path = require('path')
 const loopback = require('loopback')
 const LoopBackContext = require('loopback-context')
@@ -59,25 +31,25 @@ const app = module.exports = loopback()
 
 app.use(LoopBackContext.perRequest())
 app.use(loopback.token())
-app.use(function setCurrentUser (req, res, next) {
-  if (!req.accessToken) {
-    return next()
-  }
-  app.models.Person.findById(req.accessToken.userId, (err, user) => {
-    console.info(`> USER.DATA: ${JSON.stringify(user)}`)
-    if (err) {
-      return next(err)
-    }
-    if (!user) {
-      return next(new Error('> No user with this access token was found.'))
-    }
-    var loopbackContext = LoopBackContext.getCurrentContext()
-    if (loopbackContext) {
-      loopbackContext.set('currentUser', user)
-    }
-    next()
-  })
-})
+// app.use(function setCurrentUser (req, res, next) {
+//   if (!req.accessToken) {
+//     return next()
+//   }
+//   app.models.Person.findById(req.accessToken.userId, (err, user) => {
+//     console.info(`> USER.DATA: ${JSON.stringify(user)}`)
+//     if (err) {
+//       return next(err)
+//     }
+//     if (!user) {
+//       return next(new Error('> No user with this access token was found.'))
+//     }
+//     var loopbackContext = LoopBackContext.getCurrentContext()
+//     if (loopbackContext) {
+//       loopbackContext.set('currentUser', user)
+//     }
+//     next()
+//   })
+// })
 
 app.start = (httpOnly) => {
   let server = null
@@ -128,7 +100,7 @@ app.use('/api', loopback.rest())
 // PLEASE : do no comment these lines - browser refresh do not work anymore without it
 if (process.env.NODE_ENV && !(process.env.SHOW_EXPLORER)) {
   app.all('/*', function (req, res, next) {
-    console.log({ req: req }, 'start request')
+    // console.log({ req: req }, 'start request')
     res.sendFile(path.resolve('client/index.html'))
   })
 }
@@ -147,7 +119,7 @@ boot(app, __dirname, (err) => {
   console.group('APP ENV PARAMETERS:')
   getColorizedBootVars('NODE_ENV', process.env.NODE_ENV)
   getColorizedBootVars('INITDB', process.env.INITDB)
-  getColorizedBootVars('INIUSERS', process.env.INIUSERS)
+  getColorizedBootVars('INITUSERS', process.env.INITUSERS)
   getColorizedBootVars('INITMETADATA', process.env.INITMETADATA)
   getColorizedBootVars('INITBIKES', process.env.INITBIKES)
   getColorizedBootVars('INISTORAGE', process.env.INISTORAGE)

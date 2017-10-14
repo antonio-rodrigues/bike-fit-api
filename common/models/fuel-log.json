@@ -1,5 +1,6 @@
 {
   "name": "FuelLog",
+  "plural": "FuelLogs",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

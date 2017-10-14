@@ -4,7 +4,7 @@ module.exports = (app) => {
   /* */
 
   if (process.env.INITDB || process.env.INITUSERS) {
-    console.log('\n[ Users ]')
+    console.group('\n[ Users ]')
 
     const roles = {
       superadmin: 'superadmin',
@@ -73,7 +73,6 @@ module.exports = (app) => {
             // set email as _ID
             // Object.assign(user, {id: user.email})
             user.id = user.email
-
             console.info(`> Create Person: ${user.id} `)
 
             return Person.upsert(user).then((user) => {
@@ -102,11 +101,12 @@ module.exports = (app) => {
     return (
       Promise.all([
         createUsers(adminUsers, roles.admin),
-        // createUsers(motardUsers, roles.motard)
+        createUsers(motardUsers, roles.motard)
       ])
       // .catch(reason => Promise.reject(handleError({ id: 500, motardUsers, adminUsers, roles, reason })))
     )
   }
 
+  console.groupEnd()
   return (Promise.resolve(true))
 }

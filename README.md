@@ -10,7 +10,7 @@ Loopback based API to support bikefitapp.com operations
 
 ## Install
 
-`npm install`
+Run: `npm install`
 
 *Please, adjust settings on datasources to match your MongoDB instance*
 

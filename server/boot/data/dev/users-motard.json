@@ -4,7 +4,7 @@
     "lastName": "Arabia",
     "email": "e.t.lawrence@arabia.movie",
     "username": "law",
-    "password": "1234",
+    "password": "Password.123",
     "level": "Insane",
     "active": true
   },
@@ -13,7 +13,7 @@
     "lastName": "Brando",
     "email": "marlon.brando@biker.movie",
     "username": "marlon",
-    "password": "1234",
+    "password": "Password.123",
     "level": "MorningRider",
     "active": true
   },
@@ -22,7 +22,7 @@
     "lastName": "Gable",
     "email": "clark.gable@biker.movie",
     "username": "clark",
-    "password": "1234",
+    "password": "Password.123",
     "level": "HarleyRider",
     "active": true
   },
@@ -31,7 +31,7 @@
     "lastName": "Dean",
     "email": "james.dean@biker.movie",
     "username": "dean",
-    "password": "1234",
+    "password": "Password.123",
     "level": "TriumphRider",
     "active": true
   }
