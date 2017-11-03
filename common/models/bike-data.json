@@ -6,10 +6,15 @@
     "validateUpsert": true
   },
   "properties": {
-    "make": {
-      "type": "string"
+    "brand": {
+      "type": "string",
+      "required": true
     },
     "model": {
+      "type": "string",
+      "required": true
+    },
+    "makeYear": {
       "type": "string",
       "required": true
     },
@@ -29,6 +34,11 @@
       "type": "hasMany",
       "model": "Service",
       "foreignKey": "bikeId"
+    },
+    "person": {
+      "type": "hasOne",
+      "model": "Person",
+      "foreignKey": ""
     }
   },
   "acls": [

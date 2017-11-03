@@ -9,7 +9,9 @@
   "properties": {
     "type": {
       "type": "string",
-      "required": true
+      "required": true,
+      "id": true,
+      "index": true
     }
   },
   "validations": [],
