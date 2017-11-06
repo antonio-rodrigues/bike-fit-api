@@ -1,0 +1,38 @@
+[
+  {
+    "firstName": "Lawrence",
+    "lastName": "Arabia",
+    "email": "e.t.lawrence@arabia.movie",
+    "username": "law",
+    "password": "Password.123",
+    "level": "Insane",
+    "active": true
+  },
+  {
+    "firstName": "Marlon",
+    "lastName": "Brando",
+    "email": "marlon.brando@biker.movie",
+    "username": "marlon",
+    "password": "Password.123",
+    "level": "MorningRider",
+    "active": true
+  },
+  {
+    "firstName": "Clark",
+    "lastName": "Gable",
+    "email": "clark.gable@biker.movie",
+    "username": "clark",
+    "password": "Password.123",
+    "level": "HarleyRider",
+    "active": true
+  },
+  {
+    "firstName": "James",
+    "lastName": "Dean",
+    "email": "james.dean@biker.movie",
+    "username": "dean",
+    "password": "Password.123",
+    "level": "TriumphRider",
+    "active": true
+  }
+]

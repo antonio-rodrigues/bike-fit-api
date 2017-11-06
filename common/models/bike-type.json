@@ -9,8 +9,8 @@
   "properties": {
     "type": {
       "type": "string",
-      "required": true,
       "id": true,
+      "required": true,
       "index": true
     }
   },
@@ -40,13 +40,6 @@
       "principalType": "Role",
       "principalId": "$authenticated",
       "permission": "ALLOW"
-    },
-    {
-      "accessType": "READ",
-      "principalType": "Role",
-      "principalId": "$everyone",
-      "permission": "ALLOW",
-      "property": "login"
     }
   ],
   "methods": {}

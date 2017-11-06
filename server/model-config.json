@@ -68,5 +68,9 @@
   "Service": {
     "dataSource": "mongo-ovh",
     "public": true
+  },
+  "Insurers": {
+    "dataSource": "mongo-ovh",
+    "public": true
   }
 }

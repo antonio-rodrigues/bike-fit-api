@@ -26,6 +26,7 @@ module.exports = (app) => {
       'Person',
       'Metadata',
       'FuelLog',
+      'Insurers',
       'BikeType',
       'BikeData',
       'Service'
