@@ -122,6 +122,7 @@ boot(app, __dirname, (err) => {
   getColorizedBootVars('INITUSERS', process.env.INITUSERS)
   getColorizedBootVars('INITMETADATA', process.env.INITMETADATA)
   getColorizedBootVars('INITBIKES', process.env.INITBIKES)
+  getColorizedBootVars('INITINSURERS', process.env.INITINSURERS)
   getColorizedBootVars('INISTORAGE', process.env.INISTORAGE)
   getColorizedBootVars('DEV_ACCESS_TOKEN', process.env.DEV_ACCESS_TOKEN)
   getColorizedBootVars('SHOW_EXPLORER', process.env.SHOW_EXPLORER)

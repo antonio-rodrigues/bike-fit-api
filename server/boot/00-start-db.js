@@ -12,7 +12,8 @@ module.exports = (app) => {
     require('./scripts/04-init-metadata.js'),
     require('./scripts/07-init-bike.js'),
     require('./scripts/08-init-storage.js'),
-    require('./scripts/09-init-general.js')
+    require('./scripts/09-init-general.js'),
+    require('./scripts/10-init-insurers.js')
   ]
 
   const runScripts = () => {

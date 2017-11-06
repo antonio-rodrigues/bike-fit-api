@@ -1,0 +1,11 @@
+[
+  {
+    "firstName": "Antonio",
+    "lastName": "Rodrigues",
+    "email": "arod@bikefitapp.com",
+    "username": "admin",
+    "password": "1234",
+    "level": "UNSET",
+    "active": true
+  }
+]

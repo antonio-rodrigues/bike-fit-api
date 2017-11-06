@@ -1,0 +1,16 @@
+{
+  "mongo-ovh": {
+    "host": "mongodb1.webrahost.eu",
+    "port": 27017,
+    "database": "bikefitdb",
+    "user":"arod",
+    "password":"Pazuzu159",
+    "name": "mongo-ovh",
+    "server": {
+      "auto_reconnect": true,
+      "reconnectTries": 100,
+      "reconnectInterval": 1000
+    },
+    "connector": "mongodb"
+  }
+}
